@@ -1,16 +1,13 @@
 /*Tema Colorido */
 
 const alternateStyles = document.querySelectorAll(".alternate-style");
-function setActiveStyle(color)
-{
+function setActiveStyle(color) {
     alternateStyles.forEach((style) => {
-        if(color == style.getAttribute("title"))
-        {
+        if (color == style.getAttribute("title")) {
             style.removeAttribute("disabled");
         }
-        else
-        {
-            style.setAttribute("disabled","true");
+        else {
+            style.setAttribute("disabled", "true");
         }
     })
 }
